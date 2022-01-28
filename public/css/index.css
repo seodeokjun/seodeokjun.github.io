@@ -1,0 +1,139 @@
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#wrapper #aside{
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+#wrapper #content {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+
+
+
+
+#aside .logo{
+    width: 84%;
+    height: 15.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border: solid 1px white;
+}
+
+#aside .title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+#aside .menus{
+    width: 80%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#aside .menus .menu-item{
+    width: 100%;
+    height: 10%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#aside .menus .menu-item a{
+    color: white;
+}
+
+
+#wrapper #content .content-list{
+    width: 96%;
+    height: 94%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-list .content-item{
+    width: 32%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 0.65%;
+}
+
+.content-item .item-thumnail{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.item-thumnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-item .item-text-wrapper{
+    width: 90%;
+    height: 60%;
+    padding: 0 5%%;
+}
+
+.item-text-wrapper .title{
+    width: 100%;
+    height: 20%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.item-text-wrapper .item-date{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+    .item-text-wrapper .item-desc{
+        height: 65%;
+        padding: 2.5% 0;
+        word-break: break-all;
+        overflow: hidden;
+    }
